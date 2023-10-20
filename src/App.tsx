@@ -23,11 +23,11 @@ function App() {
 								src="/avatar.svg"
 								className="w-[200px]"
 							/>
-							<div className="flex flex-col gap-2">
-								<h1 className="text-5xl text-center">
+							<div className="flex flex-col gap-2 overflow-hidden">
+								<h1 className="text-5xl text-center animate-slideLeftToRight1s ">
 									Agustín González
 								</h1>
-								<p className="text-2xl text-center md:text-start text-white/80">
+								<p className="text-2xl text-center md:text-start text-white/80 animate-slideLeftToRight1.5s ">
 									Frontend Developer
 								</p>
 							</div>
@@ -68,10 +68,9 @@ function App() {
 					className="py-8  mx-auto max-w-[380px] md:max-w-[600px] flex flex-col gap-8"
 				>
 					<p className="text-center">
-						Lorem ipsum dolor sit amet consectetur. Feugiat
-						egestas donec tellus tincidunt. Nulla nec morbi
-						nisl purus nunc. Commodo et adipiscing sed
-						sagittis mi non quam
+						If you wanna get in touch, talk to me about a
+						project collaboration or just say hi, don't
+						hesitate to reach me on my social accounts.
 					</p>
 					<div className="w-min flex flex-col gap-4 mx-auto">
 						<a

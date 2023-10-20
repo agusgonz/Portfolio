@@ -32,7 +32,7 @@ const Card: FC<CardProps> = ({
 					<p className=" text-sm text-white/80">
 						{description}
 					</p>
-					<ul className="flex flex-wrap gap-x-2 text-sm text-yellow/80">
+					<ul className="flex flex-wrap gap-x-2 text-sm text-yellow">
 						{tags.map(tag => {
 							return <li key={tag}>{tag}</li>
 						})}
