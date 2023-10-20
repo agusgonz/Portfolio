@@ -2,19 +2,20 @@ import { Github, Linkedin } from "lucide-react"
 import Card from "./components/Card"
 import Layout from "./components/Layout"
 import Title from "./components/Title"
+import { PROJECTS_DATA } from "./utils/const"
 
 function App() {
 	return (
 		<div className="font-roboto text-white scroll-smooth h-screen bg-dark-gray ">
 			<Layout className="bg-dark-gray">
-				<nav className="flex justify-end ">
+				{/* <nav className="flex justify-end ">
 					<a
 						href="#contact-me"
 						className="text-yellow underline "
 					>
 						Contact me
 					</a>
-				</nav>
+				</nav> */}
 				<main>
 					<div className="flex flex-col gap-10 max-w-[380px] md:max-w-[600px] mx-auto">
 						<div className="flex flex-col justify-between items-center md:flex-row gap-5 md:gap-0">
@@ -44,32 +45,19 @@ function App() {
 			<Layout className="bg-gray">
 				<Title text={"Projects"} />
 				<div className="flex flex-col py-8 gap-8 justify-center items-center">
-					<Card
-						title={"Game Ghost"}
-						subtitle={"E-commerce shop for gaming products"}
-						description={
-							<div>
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Rem voluptatibus fugit
-								cumque vel eveniet illo vero dolor aliquam
-								fuga nihil.
-							</div>
-						}
-						imageSrc={"/images/1.png"}
-					/>
-					<Card
-						title={"Game Ghost"}
-						subtitle={"E-commerce shop for gaming products"}
-						description={
-							<div>
-								Lorem ipsum dolor sit amet, consectetur
-								adipisicing elit. Rem voluptatibus fugit
-								cumque vel eveniet illo vero dolor aliquam
-								fuga nihil.
-							</div>
-						}
-						imageSrc={"/images/1.png"}
-					/>
+					{PROJECTS_DATA.map(project => {
+						return (
+							<Card
+								key={project.title}
+								title={project.title}
+								description={project.description}
+								imageSrc={project.imageSrc}
+								tags={project.tags}
+								pageLink={project.pageLink}
+								githubLink={project.githubLink}
+							/>
+						)
+					})}
 				</div>
 			</Layout>
 			<Layout className="bg-dark-gray">

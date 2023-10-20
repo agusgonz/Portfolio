@@ -13,6 +13,7 @@ const Button: FC<ButtonProps> = ({
 }) => {
 	return (
 		<a
+			target="_blank"
 			href={href || "/"}
 			className={`py-2 inline-block w-full h-full text-center text-sm border-2 border-yellow  ${
 				isSecondary
