@@ -4,7 +4,7 @@ export const PROJECTS_DATA = [
 		description:
 			"Welcome to Galactic Fighter, a thrilling survival game where you, an astronaut, are thrown into the vast expanse of the cosmos, embroiled in an endless battle against an onslaught of slimes and a colossal octopus.",
 		tags: ["TypeScript", "NPM"],
-		imageSrc: "/public/images/GalacticFighter1.jpeg",
+		imageSrc: "/images/GalacticFighter1.jpeg",
 		pageLink:
 			"https://magnificent-klepon-212380.netlify.app/",
 		githubLink:
@@ -21,7 +21,7 @@ export const PROJECTS_DATA = [
 			"API",
 			"Tailwind",
 		],
-		imageSrc: "/public/images/ForecastHills1.png",
+		imageSrc: "/images/ForecastHills1.png",
 		pageLink: "https://weather-app-agusgonz.vercel.app/",
 		githubLink:
 			"https://github.com/agusgonz/Forecast-Hills",
@@ -39,7 +39,7 @@ export const PROJECTS_DATA = [
 			"NextAuth.js",
 			"Tailwind",
 		],
-		imageSrc: "/public/images/GameGhost1.png",
+		imageSrc: "/images/GameGhost1.png",
 		pageLink: "https://gameghost.vercel.app/",
 		githubLink:
 			"https://github.com/agusgonz/GameGhost-ecommerce-shop",
