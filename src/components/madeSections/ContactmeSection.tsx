@@ -13,6 +13,7 @@ const ContactmeSection: FC<
 		<SectionLayout
 			animate
 			className="bg-gray"
+			id="contact-me"
 		>
 			<Title text={"Contact me"} />
 			<div className="py-8  flex flex-col gap-8">

@@ -9,6 +9,7 @@ const Aboutme: FC<AboutmeProps> = ({}) => {
 		<SectionLayout
 			animate
 			className="bg-dark-gray"
+			id="about-me"
 		>
 			<Title text={"About me"} />
 			<div className="py-8  flex flex-col gap-8">

@@ -12,6 +12,7 @@ const ProjectsSection: FC<ProjectsSectionProps> = ({}) => {
 			animate
 			delay={0.5}
 			className="bg-gray"
+			id="projects"
 		>
 			<Title text={"Projects"} />
 			<div className="flex flex-col py-8 gap-8 justify-center items-center">
