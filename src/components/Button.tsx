@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = ({
 		<a
 			target="_blank"
 			href={href || "/"}
-			className={`py-2 inline-block w-full h-full text-center text-sm border-2 border-yellow  ${
+			className={`py-2 inline-block w-full h-full text-center text-sm border-2  border-yellow hover:border-yellow/90 ${
 				isSecondary
 					? "text-yellow hover:text-yellow/90"
 					: "bg-yellow text-dark-gray hover:bg-yellow/90"
