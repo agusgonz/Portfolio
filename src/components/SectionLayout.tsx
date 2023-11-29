@@ -8,6 +8,7 @@ interface SectionLayoutProps
 	children: ReactNode
 	animate?: boolean
 	delay?: number
+	id?: string
 }
 
 const SectionLayout: FC<SectionLayoutProps> = ({
@@ -15,10 +16,14 @@ const SectionLayout: FC<SectionLayoutProps> = ({
 	className,
 	animate,
 	delay,
+	id,
 }) => {
 	return (
-		<div className={cn("", className)}>
-			<div className=" px-8 py-8">
+		<section
+			id={id}
+			className={cn("", className)}
+		>
+			<div className=" px-12 py-12">
 				{animate ? (
 					<ObserverAnimation delay={delay}>
 						<SizedContainer>{children}</SizedContainer>
@@ -27,7 +32,7 @@ const SectionLayout: FC<SectionLayoutProps> = ({
 					<SizedContainer>{children}</SizedContainer>
 				)}
 			</div>
-		</div>
+		</section>
 	)
 }
 export default SectionLayout
