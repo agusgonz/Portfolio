@@ -10,6 +10,7 @@ export default {
 			},
 			fontFamily: {
 				roboto: ["Roboto", "sans-serif"],
+				montserrat: ["Montserrat", "sans-serif"],
 			},
 			keyframes: {
 				slideLeftToRight: {
