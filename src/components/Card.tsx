@@ -1,5 +1,6 @@
 import { FC } from "react"
 import Button from "./Button"
+import AdaptativeContainer from "./SizedContainer"
 
 interface CardProps {
 	title: string
@@ -19,12 +20,13 @@ const Card: FC<CardProps> = ({
 	githubLink,
 }) => {
 	return (
-		<div className="max-w-[380px] md:max-w-[600px] flex flex-col gap-4 ">
+		<div className=" flex flex-col gap-4 ">
 			<div className="flex flex-col gap-4 md:grid md:grid-cols-2 ">
 				<div className=" h-[190px] md:h-full md:order-1">
 					<img
 						src={imageSrc}
 						className="w-full h-full object-cover snap-center"
+						alt={title + " picture"}
 					/>
 				</div>
 				<div className="flex flex-col gap-2">
