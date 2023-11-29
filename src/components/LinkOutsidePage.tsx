@@ -20,7 +20,7 @@ const LinkOutsidePage: FC<LinkOutsidePageProps> = ({
 			className={cn(className, "")}
 		>
 			<span>{children}</span>
-			<ArrowUpRight className="inline w-3 pb-2 ml-1" />
+			<ArrowUpRight className="inline w-3 h-3 relative bottom-1 " />
 		</a>
 	)
 }

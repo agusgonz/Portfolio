@@ -3,6 +3,7 @@ import Title from "../Title"
 import { Github, Linkedin } from "lucide-react"
 import SectionLayout from "../SectionLayout"
 import AdaptativeContainer from "../SizedContainer"
+import LinkOutsidePage from "../LinkOutsidePage"
 
 interface ContactmeSectionProps {}
 
@@ -23,23 +24,24 @@ const ContactmeSection: FC<
 					hesitate to reach me on my social accounts.
 				</p>
 				<div className="flex gap-8 ">
-					<a
-						target="_blank"
+					<LinkOutsidePage
 						href="https://github.com/agusgonz"
-						className="text-yellow underline flex gap-2"
+						className="text-yellow flex items-center"
 					>
-						<Github className="w-6" />
-						GitHub
-					</a>
-
-					<a
-						target="_blank"
+						<div className="flex gap-2">
+							<Github className="w-6" />
+							GitHub
+						</div>
+					</LinkOutsidePage>
+					<LinkOutsidePage
 						href="https://www.linkedin.com/in/agustingonzend/"
-						className="text-yellow underline  flex justify-center gap-2"
+						className="text-yellow flex items-center"
 					>
-						<Linkedin className="w-6" />
-						Linkedin
-					</a>
+						<div className="flex gap-2">
+							<Linkedin className="w-6" />
+							Linkedin
+						</div>
+					</LinkOutsidePage>
 				</div>
 			</div>
 		</SectionLayout>

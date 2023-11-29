@@ -1,15 +1,18 @@
+import { ArrowUpRight } from "lucide-react"
 import { FC, ReactNode } from "react"
 
 interface ButtonProps {
 	children: ReactNode
 	isSecondary?: boolean
 	href?: string
+	isOutsidePage?: boolean
 }
 
 const Button: FC<ButtonProps> = ({
 	children,
 	isSecondary,
 	href,
+	isOutsidePage,
 }) => {
 	return (
 		<a
@@ -22,6 +25,9 @@ const Button: FC<ButtonProps> = ({
 			}`}
 		>
 			{children}
+			{isOutsidePage && (
+				<ArrowUpRight className="inline w-3 h-3 relative bottom-1" />
+			)}
 		</a>
 	)
 }

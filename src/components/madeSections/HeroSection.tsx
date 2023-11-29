@@ -15,19 +15,13 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 				<p className="text-white/70">
 					Passionate web developer with a specialization in
 					front-end using{" "}
-					<LinkOutsidePage
-						className="italic underline text-white/90 hover:text-white/80"
-						href={"https://react.dev/"}
-					>
+					<span className="italic underline text-white/80">
 						React.js
-					</LinkOutsidePage>{" "}
+					</span>{" "}
 					and{" "}
-					<LinkOutsidePage
-						className="italic underline text-white/90 hover:text-white/80"
-						href={"https://www.typescriptlang.org/"}
-					>
+					<span className="italic underline text-white/80">
 						Typescript
-					</LinkOutsidePage>
+					</span>
 					. I bring a deep understanding of modern web
 					technologies to create high-performing,
 					user-friendly websites and applications.
