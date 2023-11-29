@@ -1,6 +1,5 @@
 import { FC } from "react"
 import SectionLayout from "../SectionLayout"
-import LinkOutsidePage from "../LinkOutsidePage"
 
 interface HeroSectionProps {}
 

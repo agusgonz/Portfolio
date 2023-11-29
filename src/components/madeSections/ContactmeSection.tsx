@@ -2,7 +2,6 @@ import { FC } from "react"
 import Title from "../Title"
 import { Github, Linkedin } from "lucide-react"
 import SectionLayout from "../SectionLayout"
-import AdaptativeContainer from "../SizedContainer"
 import LinkOutsidePage from "../LinkOutsidePage"
 
 interface ContactmeSectionProps {}

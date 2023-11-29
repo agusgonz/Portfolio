@@ -1,9 +1,5 @@
-import {
-	motion,
-	useAnimate,
-	useInView,
-} from "framer-motion"
-import { FC, ReactNode, useEffect, useRef } from "react"
+import { useAnimate, useInView } from "framer-motion"
+import { FC, ReactNode, useEffect } from "react"
 
 interface ObserverAnimationProps {
 	children: ReactNode
