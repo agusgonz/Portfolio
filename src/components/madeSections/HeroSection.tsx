@@ -1,7 +1,5 @@
 import { FC } from "react"
 import SectionLayout from "../SectionLayout"
-import AdaptativeContainer from "../SizedContainer"
-import { ArrowUpRight } from "lucide-react"
 import LinkOutsidePage from "../LinkOutsidePage"
 
 interface HeroSectionProps {}

@@ -1,5 +1,4 @@
 import { FC } from "react"
-import Layout from "./SectionLayout"
 import SizedContainer from "./SizedContainer"
 import { Github, Linkedin } from "lucide-react"
 
@@ -7,7 +6,7 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => {
 	return (
-		<div className="px-8 font-montserrat">
+		<nav className="px-12 font-montserrat">
 			<SizedContainer>
 				<div className="flex items-center justify-between border-b border-white/80 py-2">
 					<a className="flex items-center gap-2">
@@ -33,8 +32,14 @@ const Navbar: FC<NavbarProps> = ({}) => {
 						</a>
 					</div>
 				</div>
+				<div className="py-2 flex flex-wrap gap-x-4 text-yellow underline underline-offset-4">
+					<a href="#experience">Experience</a>
+					<a href="#projects">Projects</a>
+					<a href="#about-me">About me</a>
+					<a href="#contact-me">Contact me</a>
+				</div>
 			</SizedContainer>
-		</div>
+		</nav>
 	)
 }
 export default Navbar
