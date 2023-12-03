@@ -23,7 +23,7 @@ const SectionLayout: FC<SectionLayoutProps> = ({
 			id={id}
 			className={cn("", className)}
 		>
-			<div className=" px-12 py-12">
+			<div className=" px-8 py-12">
 				{animate ? (
 					<ObserverAnimation delay={delay}>
 						<SizedContainer>{children}</SizedContainer>
