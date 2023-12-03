@@ -6,9 +6,9 @@ import LinkOutsidePage from "./LinkOutsidePage"
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = ({}) => (
-	<nav className="px-12 font-montserrat">
+	<nav className="px-8 font-montserrat">
 		<SizedContainer>
-			<div className="flex items-center justify-between border-b border-white/80 py-2">
+			<div className="flex items-center justify-between border-b border-white/80 py-2 flex-wrap gap-2">
 				<a className="flex items-center gap-2">
 					<img
 						className="w-8 h-8"
@@ -21,12 +21,14 @@ const Navbar: FC<NavbarProps> = ({}) => (
 					<LinkOutsidePage
 						href="https://github.com/agusgonz"
 						className="flex items-center  hover:text-yellow/90"
+						ariaLabel="Go to Agustín Gonzalez account on github"
 					>
 						<Github className="w-6 h-6" />
 					</LinkOutsidePage>
 					<LinkOutsidePage
 						href="https://www.linkedin.com/in/agustingonzend/"
 						className="flex items-center  hover:text-yellow/90"
+						ariaLabel="Go to Agustín Gonzalez account on linked in"
 					>
 						<Linkedin className="w-6 h-6" />
 					</LinkOutsidePage>
