@@ -20,36 +20,36 @@ const Navbar: FC<NavbarProps> = ({}) => (
 				<div className="flex gap-4 text-yellow">
 					<LinkOutsidePage
 						href="https://github.com/agusgonz"
-						className="flex items-center  hover:text-yellow/90"
+						className="flex items-center  hover:text-yellow/90 transition"
 						ariaLabel="Go to Agustín Gonzalez account on github"
 					>
 						<Github className="w-6 h-6" />
 					</LinkOutsidePage>
 					<LinkOutsidePage
 						href="https://www.linkedin.com/in/agustingonzend/"
-						className="flex items-center  hover:text-yellow/90"
+						className="flex items-center  hover:text-yellow/90 transition"
 						ariaLabel="Go to Agustín Gonzalez account on linked in"
 					>
 						<Linkedin className="w-6 h-6" />
 					</LinkOutsidePage>
 				</div>
 			</div>
-			<div className="py-2 flex flex-wrap gap-x-4 text-yellow underline underline-offset-4">
+			<div className="py-2 flex flex-wrap gap-x-4 text-yellow ">
 				<a
 					href="#projects"
-					className="hover:text-yellow/90"
+					className="hover:text-yellow/90 transition "
 				>
 					Projects
 				</a>
 				<a
 					href="#about-me"
-					className="hover:text-yellow/90"
+					className="hover:text-yellow/90 transition"
 				>
 					About me
 				</a>
 				<a
 					href="#contact-me"
-					className="hover:text-yellow/90"
+					className="hover:text-yellow/90 transition"
 				>
 					Contact me
 				</a>
