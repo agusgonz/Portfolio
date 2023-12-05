@@ -14,11 +14,11 @@ const HeroSection: FC<HeroSectionProps> = ({}) => {
 				<p className="text-white/70">
 					Passionate web developer with a specialization in
 					front-end using{" "}
-					<span className="italic underline text-white/80">
+					<span className="italic text-white/90">
 						React.js
 					</span>{" "}
 					and{" "}
-					<span className="italic underline text-white/80">
+					<span className="italic text-white/90">
 						Typescript
 					</span>
 					. I bring a deep understanding of modern web
